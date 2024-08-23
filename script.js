@@ -1,27 +1,27 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const closedBoxOne = document.getElementById("offer-close-1");
-    const closedBoxTwo = document.getElementById("offer-close-2");
-    const closedBoxThree = document.getElementById("offer-close-3");
-    const openBoxOne = document.getElementById("offer-open-1");
-    const openBoxTwo = document.getElementById("offer-open-2");
-    const openBoxThree = document.getElementById("offer-open-3");
+document.addEventListener("DOMContentLoaded", function () {
+  const closedBoxOne = document.getElementById("offer-box-close-one");
+  const closedBoxTwo = document.getElementById("offer-box-close-two");
+  const closedBoxThree = document.getElementById("offer-box-close-three");
+  const openBoxOne = document.getElementById("offer-box-open-one");
+  const openBoxTwo = document.getElementById("offer-box-open-two");
+  const openBoxThree = document.getElementById("offer-box-open-three");
 
-    const closedBoxes = [closedBoxOne, closedBoxTwo, closedBoxThree];
-    const openBoxes = [openBoxOne, openBoxTwo, openBoxThree];
+  const closedBoxes = [closedBoxOne, closedBoxTwo, closedBoxThree];
+  const openBoxes = [openBoxOne, openBoxTwo, openBoxThree];
 
-    closedBoxes.forEach((closedBox, index) => {
-        closedBox.addEventListener("click", () => {
-            closedBoxes.forEach(box => box.classList.remove("display-hidden"));
+  closedBoxes.forEach((closedBox, index) => {
+    closedBox.addEventListener("click", () => {
+      closedBoxes.forEach((box) => box.classList.remove("display-hide"));
 
-            openBoxes.forEach(box => {
-                box.classList.add("display-hidden");
-                box.classList.remove("open-box");
-            });
+      openBoxes.forEach((box) => {
+        box.classList.add("display-hide");
+        box.classList.remove("open-box");
+      });
 
-            openBoxes[index].classList.remove("display-hidden");
-            openBoxes[index].classList.add("open-box");
+      openBoxes[index].classList.remove("display-hide");
+      openBoxes[index].classList.add("open-box");
 
-            closedBox.classList.add("display-hidden");
-        });
+      closedBox.classList.add("display-hide");
     });
+  });
 });

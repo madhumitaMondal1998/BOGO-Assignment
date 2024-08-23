@@ -1,217 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BOGO Offer</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
-    <div class="offer-container">
-        <h1>YAY! It’s BOGO</h1>
+  <body>
+    <div class="offer-box">
+      <h1>YAY! It’s BOGO</h1>
 
-        <!-- First Offer -->
-        <div class="offer" id="offer-close-1">
-            <div class="discount-tag">
-                <span>30%<br>Off</span>
-            </div>
-            <div class="offer-details">
-                <input type="radio" name="offer" checked>
-                <label for="offer1">
-                    Buy 1 Get 2
-                    <span>$18.00 USD</span>
-                </label>
-            </div>
+      <!-- First Offer -->
+      <div class="offer" id="offer-box-close-one">
+        <div class="discount-tag">
+          <span>30%<br />Off</span>
         </div>
-
-        <div class="offer  display-hidden" id="offer-open-1">
-            <div class="offer-details">
-                <div class="offer-top">
-                    <input type="radio" name="offer" id="offer1">
-                    <span class="offer-details-top-open">
-                        Buy 1 Get 2
-                        <strong>$18.00 USD
-                        </strong>
-                    </span>
-                    <span class="discounted-price">
-                        <span class="discount">10% Off</span>
-                        <span class="original-price">$10.00 USD</span>
-                    </span>
-                </div>
-                <div class="dropdown-container">
-                    <div class="dropdown-row">
-                        <label>#1</label>
-                        <select class="dropdown">
-                            <option value="S">S</option>
-                            <option value="M">M</option>
-                            <option value="L">L</option>
-                        </select>
-                        <select class="dropdown">
-                            <option value="black">Black</option>
-                            <option value="white">White</option>
-                            <option value="blue">Blue</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
+        <div class="offer-details">
+          <input type="radio" name="offer" checked />
+          <label for="offer1">
+            Buy 1 Get 2
+            <span>$18.00 USD</span>
+          </label>
         </div>
+      </div>
 
-
-        <!-- Second Offer -->
-        <div class="offer" id="offer-close-2">
-            <div class="discount-tag">
-                <span>30%<br>Off</span>
+      <div class="offer display-hide" id="offer-box-open-one">
+        <div class="offer-details">
+          <div class="offer-top">
+            <input type="radio" name="offer" />
+            <span class="offer-details-top-open">
+              Buy 1 Get 2
+              <strong>$18.00 USD </strong>
+            </span>
+            <span class="discounted-price">
+              <span class="discount">10% Off</span>
+              <span class="original-price">$10.00 USD</span>
+            </span>
+          </div>
+          <div class="dropdown-container">
+            <div class="dropdown-row">
+              <label>#1</label>
+              <select class="dropdown">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+              <select class="dropdown">
+                <option value="black">Black</option>
+                <option value="white">White</option>
+                <option value="blue">Blue</option>
+              </select>
             </div>
-            <div class="offer-details">
-                <input type="radio" name="offer" checked>
-                <label for="offer1">
-                    Buy 2 Get 4
-                    <span>$18.00 USD</span>
-                </label>
-            </div>
-            <span class="popular">Most Popular</span>
-
+          </div>
         </div>
-        <!-- Second Offer with Dropdowns -->
-        <div class="offer  display-hidden" id="offer-open-2">
-            <div class="offer-details">
-                <div class="offer-top">
-                    <input type="radio" name="offer" id="offer2">
-                    <span class="offer-details-top-open">
-                        Buy 2 Get 4
-                        <strong>$36.00 USD
-                        </strong>
-                    </span>
-                    <span class="discounted-price">
-                        <span class="discount">10% Off</span>
-                        <span class="original-price">$10.00 USD</span>
-                    </span>
-                </div>
-                <div class="dropdown-container">
-                    <div class="dropdown-row">
-                        <label>#1</label>
-                        <select class="dropdown">
-                            <option value="S">S</option>
-                            <option value="M">M</option>
-                            <option value="L">L</option>
-                        </select>
-                        <select class="dropdown">
-                            <option value="black">Black</option>
-                            <option value="white">White</option>
-                            <option value="blue">Blue</option>
-                        </select>
-                    </div>
-                    <div class="dropdown-row">
-                        <label>#2</label>
-                        <select class="dropdown">
-                            <option value="S">S</option>
-                            <option value="M">M</option>
-                            <option value="L">L</option>
-                        </select>
-                        <select class="dropdown">
-                            <option value="black">Black</option>
-                            <option value="white">White</option>
-                            <option value="blue">Blue</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
+      </div>
+
+      <div class="offer" id="offer-box-close-two">
+        <div class="discount-tag">
+          <span>30%<br />Off</span>
         </div>
-
-        <!-- Third offer -->
-        <div class="offer" id="offer-close-3">
-            <div class="discount-tag">
-                <span>30%<br>Off</span>
-            </div>
-            <div class="offer-details">
-                <input type="radio" name="offer" id="offer3" checked>
-                <label for="offer1">
-                    Buy 3 Get 6
-                    <span>$18.00 USD</span>
-                </label>
-            </div>
+        <div class="offer-details">
+          <input type="radio" name="offer" checked />
+          <label for="offer1">
+            Buy 2 Get 4
+            <span>$18.00 USD</span>
+          </label>
         </div>
+        <span class="popular">Most Popular</span>
+      </div>
 
-        <!-- First Offer with Dropdowns -->
-
-
-
-        <!-- Third Offer with Dropdowns -->
-        <div class="offer  display-hidden" id="offer-open-3">
-            <div class="offer-details">
-                <div class="offer-top">
-                    <input type="radio" name="offer" id="offer3">
-                    <span class="offer-details-top-open">
-                        Buy 3 Get 6
-                        <strong>$36.00 USD
-                        </strong>
-                    </span>
-                    <span class="discounted-price">
-                        <span class="discount">10% Off</span>
-                        <span class="original-price">$10.00 USD</span>
-                    </span>
-                </div>
-                <div class="dropdown-container">
-                    <div class="dropdown-row">
-                        <label>#1</label>
-                        <select class="dropdown">
-                            <option value="S">S</option>
-                            <option value="M">M</option>
-                            <option value="L">L</option>
-                        </select>
-                        <select class="dropdown">
-                            <option value="black">Black</option>
-                            <option value="white">White</option>
-                            <option value="blue">Blue</option>
-                        </select>
-                    </div>
-                    <div class="dropdown-row">
-                        <label>#2</label>
-                        <select class="dropdown">
-                            <option value="S">S</option>
-                            <option value="M">M</option>
-                            <option value="L">L</option>
-                        </select>
-                        <select class="dropdown">
-                            <option value="black">Black</option>
-                            <option value="white">White</option>
-                            <option value="blue">Blue</option>
-                        </select>
-                    </div>
-                    <div class="dropdown-row">
-                        <label>#3</label>
-                        <select class="dropdown">
-                            <option value="S">S</option>
-                            <option value="M">M</option>
-                            <option value="L">L</option>
-                        </select>
-                        <select class="dropdown">
-                            <option value="black">Black</option>
-                            <option value="white">White</option>
-                            <option value="blue">Blue</option>
-                        </select>
-                    </div>
-                </div>
+      <div class="offer display-hide" id="offer-box-open-two">
+        <div class="offer-details">
+          <div class="offer-top">
+            <input type="radio" name="offer" />
+            <span class="offer-details-top-open">
+              Buy 2 Get 4
+              <strong>$36.00 USD </strong>
+            </span>
+            <span class="discounted-price">
+              <span class="discount">10% Off</span>
+              <span class="original-price">$10.00 USD</span>
+            </span>
+          </div>
+          <div class="dropdown-container">
+            <div class="dropdown-row">
+              <label>#1</label>
+              <select class="dropdown">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+              <select class="dropdown">
+                <option value="black">Black</option>
+                <option value="white">White</option>
+                <option value="blue">Blue</option>
+              </select>
             </div>
+            <div class="dropdown-row">
+              <label>#2</label>
+              <select class="dropdown">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+              <select class="dropdown">
+                <option value="black">Black</option>
+                <option value="white">White</option>
+                <option value="blue">Blue</option>
+              </select>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <!-- Free Delivery and Total -->
-        <div class="summary">
-            <span class="free-delivery">Free Delivery</span>
-            <span class="total">Total: $18.00 USD</span>
+      <div class="offer" id="offer-box-close-three">
+        <div class="discount-tag">
+          <span>30%<br />Off</span>
         </div>
+        <div class="offer-details">
+          <input type="radio" name="offer" checked />
+          <label for="offer1">
+            Buy 3 Get 6
+            <span>$18.00 USD</span>
+          </label>
+        </div>
+      </div>
 
-        <!-- Add to Cart Button -->
-        <button class="add-to-cart">+ Add to Cart</button>
+      <div class="offer display-hide" id="offer-box-open-three">
+        <div class="offer-details">
+          <div class="offer-top">
+            <input type="radio" name="offer" />
+            <span class="offer-details-top-open">
+              Buy 3 Get 6
+              <strong>$36.00 USD </strong>
+            </span>
+            <span class="discounted-price">
+              <span class="discount">10% Off</span>
+              <span class="original-price">$10.00 USD</span>
+            </span>
+          </div>
+          <div class="dropdown-container">
+            <div class="dropdown-row">
+              <label>#1</label>
+              <select class="dropdown">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+              <select class="dropdown">
+                <option value="black">Black</option>
+                <option value="white">White</option>
+                <option value="blue">Blue</option>
+              </select>
+            </div>
+            <div class="dropdown-row">
+              <label>#2</label>
+              <select class="dropdown">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+              <select class="dropdown">
+                <option value="black">Black</option>
+                <option value="white">White</option>
+                <option value="blue">Blue</option>
+              </select>
+            </div>
+            <div class="dropdown-row">
+              <label>#3</label>
+              <select class="dropdown">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+              <select class="dropdown">
+                <option value="black">Black</option>
+                <option value="white">White</option>
+                <option value="blue">Blue</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <!-- Footer -->
-        <div class="footer">Powered by Pumper</div>
+      <!-- Free Delivery and Total -->
+      <div class="summary">
+        <span class="free-delivery">Free Delivery</span>
+        <span class="total">Total: $18.00 USD</span>
+      </div>
+
+      <!-- Add to Cart Button -->
+      <button class="add-to-cart">+ Add to Cart</button>
+
+      <!-- Footer -->
+      <div class="footer">Powered by Pumper</div>
     </div>
 
     <!-- Include the JS -->
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
